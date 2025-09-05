@@ -1,0 +1,25 @@
+cart_db = {}
+
+
+def add_item(item, quantity):
+    if item not in cart_db:
+        return cart_db.update({item: quantity})
+    else:
+        return f"Item {item} already in cart"
+    
+
+
+add_item("Shirt", 2)
+
+add_item("Shirt", 5)
+print(cart_db)
+print(" ")
+print("End of first add_item\n")
+cart_2db = {}
+def add_item2(item, quantity):
+    if item not in cart_2db:
+        return cart_2db.update({item: quantity})
+    else:
+        return f"Item {item} already in cart"     
+# cart_db.clear()
+# print(cart_db)

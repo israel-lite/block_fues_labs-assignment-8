@@ -7,21 +7,9 @@ Requirements:1. The class should allow marking a student as present or absent.
 4. Provide a method to display the full register.
 
 Example Usage:
-    register = isterAttendanceReg()
+    register = AttendanceReg()
     register.mark_present("John")
     register.mark_absent("Mary")
     print(register.get_status("John"))   # "Present"
     print(register.show_register())      # {"John": "Present", "Mary": "Absent"}
 """
-
-
-class AttendanceRegister:
-    def __init__(self, firstname, lastname, ):
-        self.firstname = John
-        self.lastname = Mary
-
-    register = AttendanceRegister()
-    register.mark_present("John")
-    register.mark_absent("Mary")
-    print(register.get_status("John"))   
-    print(register.show_register())      
